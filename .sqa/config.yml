@@ -1,0 +1,60 @@
+config:
+  credentials: []
+  project_repos:
+    git.man.poznan.pl/stash/scm/eosc-rs/preprocessor:
+      branch: master
+      repo: https://git.man.poznan.pl/stash/scm/eosc-rs/preprocessor.git
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.7
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
+        commands:
+        - /usr/bin/env sh .sqa/script.cranky-cyan-discus.sh
+        container: qc.acc_cozy-pear-slug
+  QC.Doc:
+    repos:
+      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.surly-persimmon-caracal.sh
+        container: qc.doc_cheeky-amaranth-flounder
+      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
+        commands:
+        - /usr/bin/env sh .sqa/script.dorky-indigo-barracuda.sh
+        container: qc.doc_clammy-teal-pinscher
+      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.wimpy-orange-hornet.sh
+        container: qc.doc_bumpy-indigo-caracal
+  QC.Lic:
+    repos:
+      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.crabby-firebrick-quail.sh
+        container: qc.lic_nippy-platinum-gerbil
+  QC.Sty:
+    repos:
+      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor checkstyle:
+        commands:
+        - /usr/bin/env sh .sqa/script.sloppy-bistre-wallaby.sh
+        container: qc.sty_woolly-beige-monster
+      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.gimpy-razzmatazz-zorse.sh
+        container: qc.sty_nerdy-rose-labradoodle
+      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.sloppy-cardinal-squid.sh
+        container: qc.sty_bumpy-cerulean-hamster
+  QC.Ver:
+    repos:
+      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.fuzzy-chestnut-bonobo.sh
+        container: qc.ver_lanky-pink-fish
+timeout: 5400
