@@ -15,62 +15,62 @@ sqa_criteria:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-seashell-kakapo.sh
-        container: qc.acc_jumpy-khaki-centipede
+        - /usr/bin/env sh .sqa/script.bumpy-tomato-dog.sh
+        container: qc.acc_dorky-chestnut-quetzal
   QC.Doc:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-violet-wildebeest.sh
-        container: qc.doc_cozy-orange-bandicoot
+        - /usr/bin/env sh .sqa/script.messy-chestnut-gerbil.sh
+        container: qc.doc_muzzy-malachite-caiman
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-blue-fousek.sh
-        container: qc.doc_stinky-lime-centipede
+        - /usr/bin/env sh .sqa/script.stuffy-charcoal-whale.sh
+        container: qc.doc_homely-fuchsia-donkey
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-xanthic-barb.sh
-        container: qc.doc_sloppy-yellow-dogfish
+        - /usr/bin/env sh .sqa/script.stinky-carmine-frigatebird.sh
+        container: qc.doc_muzzy-chocolate-chimpanzee
   QC.Lic:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-cyan-macaque.sh
-        container: qc.lic_freaky-alizarin-bordeaux
+        - /usr/bin/env sh .sqa/script.snappy-aqua-quetzal.sh
+        container: qc.lic_thirsty-green-macaque
   QC.Met:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-black-ostrich.sh
-        container: qc.met_woozy-sapphire-kiwi
+        - /usr/bin/env sh .sqa/script.ready-sangria-ladybird.sh
+        container: qc.met_crabby-teal-mammoth
   QC.Sec:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-bistre-booby.sh
-        container: qc.sec_paltry-azure-reindeer
+        - /usr/bin/env sh .sqa/script.cranky-linen-frise.sh
+        container: qc.sec_snappy-alizarin-cichlid
   QC.Sty:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-scarlet-vulture.sh
-        container: qc.sty_hazy-emerald-hornet
+        - /usr/bin/env sh .sqa/script.bumpy-thistle-loon.sh
+        container: qc.sty_pasty-lemon-tuatara
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-olivine-peccary.sh
-        container: qc.sty_wheezy-corn-chihuahua
+        - /usr/bin/env sh .sqa/script.zippy-amber-loon.sh
+        container: qc.sty_gummy-coral-whippet
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-cream-crane.sh
-        container: qc.sty_hazy-cyan-sheepdog
+        - /usr/bin/env sh .sqa/script.jumpy-smalt-bullfrog.sh
+        container: qc.sty_homey-firebrick-uakari
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-crimson-paradise.sh
-        container: qc.sty_slaphappy-tan-dingo
+        - /usr/bin/env sh .sqa/script.droopy-viridian-buffalo.sh
+        container: qc.sty_craggy-dandelion-swan
   QC.Ver:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-dandelion-husky.sh
-        container: qc.ver_wimpy-turquoise-worm
+        - /usr/bin/env sh .sqa/script.nerdy-razzmatazz-elephant.sh
+        container: qc.ver_chummy-beige-butterfly
 timeout: 5400
