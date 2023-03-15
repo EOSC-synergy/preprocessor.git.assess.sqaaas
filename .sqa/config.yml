@@ -2,10 +2,10 @@ config:
   credentials: []
   project_repos:
     git.man.poznan.pl/stash/scm/eosc-rs/preprocessor:
-      branch: develop
+      branch: master
       repo: https://git.man.poznan.pl/stash/scm/eosc-rs/preprocessor.git
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.8
+      branch: release/1.7.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,62 +15,32 @@ sqa_criteria:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-lime-mayfly.sh
-        container: qc.acc_scummy-sapphire-rhinoceros
+        - /usr/bin/env sh .sqa/script.wiggy-firebrick-alligator.sh
+        container: qc.acc_craggy-salmon-russel
   QC.Doc:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-plum-sparrow.sh
-        container: qc.doc_boozy-firebrick-markhor
+        - /usr/bin/env sh .sqa/script.nippy-silver-penguin.sh
+        container: qc.doc_randy-orange-zorse
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-aqua-beaver.sh
-        container: qc.doc_scummy-denim-jackal
+        - /usr/bin/env sh .sqa/script.foggy-heliotrope-havanese.sh
+        container: qc.doc_sickly-ultramarine-emu
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-khaki-slug.sh
-        container: qc.doc_bumpy-green-squirt
+        - /usr/bin/env sh .sqa/script.flimsy-linen-kangaroo.sh
+        container: qc.doc_nippy-razzmatazz-bulldog
   QC.Lic:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-ruby-cat.sh
-        container: qc.lic_woolly-aqua-macaw
-  QC.Met:
-    repos:
-      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor cff-converter-python:
-        commands:
-        - /usr/bin/env sh .sqa/script.sloppy-taupe-hummingbird.sh
-        container: qc.met_shabby-sangria-fly
-  QC.Sec:
-    repos:
-      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor bandit:
-        commands:
-        - /usr/bin/env sh .sqa/script.wimpy-ultramarine-yak.sh
-        container: qc.sec_chummy-chartreuse-weasel
-  QC.Sty:
-    repos:
-      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor checkstyle:
-        commands:
-        - /usr/bin/env sh .sqa/script.dorky-gamboge-mastiff.sh
-        container: qc.sty_beady-cobalt-maltese
-      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor flake8:
-        commands:
-        - /usr/bin/env sh .sqa/script.boozy-ecru-starfish.sh
-        container: qc.sty_lousy-seashell-shrew
-      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor hadolint:
-        commands:
-        - /usr/bin/env sh .sqa/script.skanky-gamboge-sheep.sh
-        container: qc.sty_scummy-green-meerkat
-      git.man.poznan.pl/stash/scm/eosc-rs/preprocessor jsonlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.beady-auburn-rattlesnake.sh
-        container: qc.sty_foggy-brown-kangaroo
+        - /usr/bin/env sh .sqa/script.lumpy-crimson-tapir.sh
+        container: qc.lic_sickly-fuchsia-caracal
   QC.Ver:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-tangerine-coral.sh
-        container: qc.ver_fuzzy-coral-cuscus
+        - /usr/bin/env sh .sqa/script.boozy-champagne-barracuda.sh
+        container: qc.ver_leaky-cardinal-rat
 timeout: 5400
