@@ -15,46 +15,46 @@ sqa_criteria:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-violet-camel.sh
-        container: qc.acc_silly-flax-sheep
+        - /usr/bin/env sh .sqa/script.hazy-cyan-tzu.sh
+        container: qc.acc_stinky-turquoise-shrew
   QC.Doc:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-corn-jaguar.sh
-        container: qc.doc_snippy-peach-dog
+        - /usr/bin/env sh .sqa/script.clammy-gamboge-dolphin.sh
+        container: qc.doc_homely-ecru-rat
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-olive-skunk.sh
-        container: qc.doc_sunny-coral-chameleon
+        - /usr/bin/env sh .sqa/script.smelly-eggplant-peccary.sh
+        container: qc.doc_fuzzy-bistre-spaniel
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-ultramarine-ray.sh
-        container: qc.doc_flaky-chartreuse-chipmunk
+        - /usr/bin/env sh .sqa/script.pasty-orchid-lemming.sh
+        container: qc.doc_snappy-ecru-llama
   QC.Lic:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-charcoal-manatee.sh
-        container: qc.lic_grumpy-azure-dolphin
+        - /usr/bin/env sh .sqa/script.blurry-corn-rottweiler.sh
+        container: qc.lic_homely-sangria-coyote
   QC.Sty:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-persimmon-shrimp.sh
-        container: qc.sty_crappy-chartreuse-ibis
+        - /usr/bin/env sh .sqa/script.messy-black-flamingo.sh
+        container: qc.sty_tasty-periwinkle-ant
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-cerulean-bombay.sh
-        container: qc.sty_lovely-green-bison
+        - /usr/bin/env sh .sqa/script.wimpy-amber-mastiff.sh
+        container: qc.sty_gummy-asparagus-stingray
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-cerulean-newt.sh
-        container: qc.sty_bumpy-cerise-chinchilla
+        - /usr/bin/env sh .sqa/script.pretty-seashell-argentino.sh
+        container: qc.sty_messy-cinnabar-sponge
   QC.Ver:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-green-collie.sh
-        container: qc.ver_squeaky-brown-fly
+        - /usr/bin/env sh .sqa/script.wiggy-amaranth-balinese.sh
+        container: qc.ver_shaky-sangria-mouse
 timeout: 5400
