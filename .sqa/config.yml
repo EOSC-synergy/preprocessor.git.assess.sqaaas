@@ -5,7 +5,7 @@ config:
       branch: master
       repo: https://git.man.poznan.pl/stash/scm/eosc-rs/preprocessor.git
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.8
+      branch: release/1.7.9
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,62 +15,62 @@ sqa_criteria:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-wisteria-orangutan.sh
-        container: qc.acc_stealthy-rust-harrier
+        - /usr/bin/env sh .sqa/script.droopy-turquoise-bobcat.sh
+        container: qc.acc_skimpy-brown-kiwi
   QC.Doc:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-red-grasshopper.sh
-        container: qc.doc_gummy-razzmatazz-dodo
+        - /usr/bin/env sh .sqa/script.leaky-pink-wasp.sh
+        container: qc.doc_thirsty-persimmon-fish
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-saffron-setter.sh
-        container: qc.doc_gummy-green-oyster
+        - /usr/bin/env sh .sqa/script.ugly-zucchini-rottweiler.sh
+        container: qc.doc_stuffy-rose-magpie
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-peach-wolverine.sh
-        container: qc.doc_tasty-orchid-kakapo
+        - /usr/bin/env sh .sqa/script.trippy-auburn-ocelot.sh
+        container: qc.doc_sunny-vermilion-cockroach
   QC.Lic:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-lime-gerbil.sh
-        container: qc.lic_queasy-silver-argentino
+        - /usr/bin/env sh .sqa/script.zippy-cinnabar-retriever.sh
+        container: qc.lic_stuffy-olivine-zonkey
   QC.Met:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-pink-gibbon.sh
-        container: qc.met_scanty-heliotrope-llama
+        - /usr/bin/env sh .sqa/script.foggy-coral-dogfish.sh
+        container: qc.met_snippy-bronze-angelfish
   QC.Sec:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-cobalt-tiger.sh
-        container: qc.sec_randy-eggplant-monster
+        - /usr/bin/env sh .sqa/script.bumpy-peach-bear.sh
+        container: qc.sec_stealthy-lemon-swan
   QC.Sty:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-violet-whippet.sh
-        container: qc.sty_ugly-gold-scorpion
+        - /usr/bin/env sh .sqa/script.nippy-jade-harrier.sh
+        container: qc.sty_sunny-burgundy-retriever
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-russet-koala.sh
-        container: qc.sty_ready-cornflower-snail
+        - /usr/bin/env sh .sqa/script.sloppy-goldenrod-caracal.sh
+        container: qc.sty_boozy-cornflower-zebu
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-ultramarine-saola.sh
-        container: qc.sty_hasty-chestnut-sponge
+        - /usr/bin/env sh .sqa/script.gamy-linen-yak.sh
+        container: qc.sty_grumpy-wisteria-zonkey
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-turquoise-crocodile.sh
-        container: qc.sty_scanty-cerulean-indri
+        - /usr/bin/env sh .sqa/script.leaky-pumpkin-cuscus.sh
+        container: qc.sty_skinny-tan-fossa
   QC.Ver:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-taupe-seal.sh
-        container: qc.ver_cozy-bronze-eleuth
+        - /usr/bin/env sh .sqa/script.frumpy-sapphire-dane.sh
+        container: qc.ver_squirrely-platinum-vole
 timeout: 5400
