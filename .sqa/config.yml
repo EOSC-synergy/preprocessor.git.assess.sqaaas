@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     git.man.poznan.pl/stash/scm/eosc-rs/preprocessor:
-      branch: develop
+      branch: master
       repo: https://git.man.poznan.pl/stash/scm/eosc-rs/preprocessor.git
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/1.7.8
@@ -15,62 +15,62 @@ sqa_criteria:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-dandelion-ant.sh
-        container: qc.acc_greasy-champagne-balinese
+        - /usr/bin/env sh .sqa/script.lumpy-wisteria-orangutan.sh
+        container: qc.acc_stealthy-rust-harrier
   QC.Doc:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-lavender-lizard.sh
-        container: qc.doc_paltry-pumpkin-chow
+        - /usr/bin/env sh .sqa/script.smelly-red-grasshopper.sh
+        container: qc.doc_gummy-razzmatazz-dodo
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-auburn-binturong.sh
-        container: qc.doc_squeaky-khaki-seahorse
+        - /usr/bin/env sh .sqa/script.tacky-saffron-setter.sh
+        container: qc.doc_gummy-green-oyster
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-scarlet-sheep.sh
-        container: qc.doc_crappy-chestnut-chameleon
+        - /usr/bin/env sh .sqa/script.sunny-peach-wolverine.sh
+        container: qc.doc_tasty-orchid-kakapo
   QC.Lic:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-pumpkin-husky.sh
-        container: qc.lic_snappy-sangria-emu
+        - /usr/bin/env sh .sqa/script.sleepy-lime-gerbil.sh
+        container: qc.lic_queasy-silver-argentino
   QC.Met:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-xanthic-insect.sh
-        container: qc.met_nippy-lavender-flounder
+        - /usr/bin/env sh .sqa/script.ugly-pink-gibbon.sh
+        container: qc.met_scanty-heliotrope-llama
   QC.Sec:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.gloppy-blue-badger.sh
-        container: qc.sec_whiny-beige-macaw
+        - /usr/bin/env sh .sqa/script.shabby-cobalt-tiger.sh
+        container: qc.sec_randy-eggplant-monster
   QC.Sty:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-rose-armadillo.sh
-        container: qc.sty_lanky-wheat-whippet
+        - /usr/bin/env sh .sqa/script.stinky-violet-whippet.sh
+        container: qc.sty_ugly-gold-scorpion
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-rust-dane.sh
-        container: qc.sty_scummy-ecru-centipede
+        - /usr/bin/env sh .sqa/script.dorky-russet-koala.sh
+        container: qc.sty_ready-cornflower-snail
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-corn-kingfisher.sh
-        container: qc.sty_sickly-sepia-mongrel
+        - /usr/bin/env sh .sqa/script.paltry-ultramarine-saola.sh
+        container: qc.sty_hasty-chestnut-sponge
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-platinum-seal.sh
-        container: qc.sty_leaky-teal-bloodhound
+        - /usr/bin/env sh .sqa/script.stinky-turquoise-crocodile.sh
+        container: qc.sty_scanty-cerulean-indri
   QC.Ver:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-denim-crab.sh
-        container: qc.ver_slimy-aqua-snake
+        - /usr/bin/env sh .sqa/script.muggy-taupe-seal.sh
+        container: qc.ver_cozy-bronze-eleuth
 timeout: 5400
