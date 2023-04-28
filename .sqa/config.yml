@@ -5,7 +5,7 @@ config:
       branch: master
       repo: https://git.man.poznan.pl/stash/scm/eosc-rs/preprocessor.git
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.9
+      branch: release/1.7.10
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,62 +15,62 @@ sqa_criteria:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-zucchini-camel.sh
-        container: qc.acc_pretty-corn-gerbil
+        - /usr/bin/env sh .sqa/script.beady-denim-wallaby.sh
+        container: qc.acc_muggy-cornflower-gecko
   QC.Doc:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-mustard-cat.sh
-        container: qc.doc_crabby-bronze-orangutan
+        - /usr/bin/env sh .sqa/script.sickly-violet-alligator.sh
+        container: qc.doc_flaky-magenta-spaniel
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-mustard-crane.sh
-        container: qc.doc_surly-brown-mandrill
+        - /usr/bin/env sh .sqa/script.crappy-mauve-okapi.sh
+        container: qc.doc_randy-copper-sloth
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-cyan-dollar.sh
-        container: qc.doc_blurry-seashell-harrier
+        - /usr/bin/env sh .sqa/script.messy-heliotrope-binturong.sh
+        container: qc.doc_hasty-cobalt-lion
   QC.Lic:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-goldenrod-terrier.sh
-        container: qc.lic_lanky-periwinkle-moorhen
+        - /usr/bin/env sh .sqa/script.lumpy-copper-boar.sh
+        container: qc.lic_snoopy-maroon-wolf
   QC.Met:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-fuchsia-olm.sh
-        container: qc.met_muzzy-smalt-javanese
+        - /usr/bin/env sh .sqa/script.shaky-cinnabar-audemer.sh
+        container: qc.met_skanky-violet-heron
   QC.Sec:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-gamboge-albatross.sh
-        container: qc.sec_seedy-taupe-newfoundland
+        - /usr/bin/env sh .sqa/script.sleazy-persimmon-discus.sh
+        container: qc.sec_sloppy-green-mist
   QC.Sty:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-turquoise-bat.sh
-        container: qc.sty_muggy-russet-stingray
+        - /usr/bin/env sh .sqa/script.cranky-blue-dachshund.sh
+        container: qc.sty_woolly-sepia-turtle
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-asparagus-olm.sh
-        container: qc.sty_cheeky-carmine-devil
+        - /usr/bin/env sh .sqa/script.lovely-teal-opossum.sh
+        container: qc.sty_frumpy-rust-squirt
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-cream-mau.sh
-        container: qc.sty_wimpy-buff-mandrill
+        - /usr/bin/env sh .sqa/script.tacky-orange-goat.sh
+        container: qc.sty_cheeky-sepia-crab
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-copper-meerkat.sh
-        container: qc.sty_randy-wisteria-dugong
+        - /usr/bin/env sh .sqa/script.chummy-copper-walrus.sh
+        container: qc.sty_chewy-cinnabar-dane
   QC.Ver:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-aquamarine-gibbon.sh
-        container: qc.ver_greasy-brass-meerkat
+        - /usr/bin/env sh .sqa/script.randy-malachite-insect.sh
+        container: qc.ver_messy-blue-labradoodle
 timeout: 5400
