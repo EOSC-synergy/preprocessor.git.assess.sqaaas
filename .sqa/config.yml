@@ -5,7 +5,7 @@ config:
       branch: master
       repo: https://git.man.poznan.pl/stash/scm/eosc-rs/preprocessor.git
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.10
+      branch: release/1.7.11
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,62 +15,62 @@ sqa_criteria:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-denim-wallaby.sh
-        container: qc.acc_muggy-cornflower-gecko
+        - /usr/bin/env sh .sqa/script.snazzy-aquamarine-warthog.sh
+        container: qc.acc_ugly-tangerine-crane
   QC.Doc:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-violet-alligator.sh
-        container: qc.doc_flaky-magenta-spaniel
+        - /usr/bin/env sh .sqa/script.leaky-cyan-tarsier.sh
+        container: qc.doc_sunny-magenta-moorhen
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor git:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-mauve-okapi.sh
-        container: qc.doc_randy-copper-sloth
+        - /usr/bin/env sh .sqa/script.zippy-persimmon-fly.sh
+        container: qc.doc_leaky-burgundy-dolphin
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-heliotrope-binturong.sh
-        container: qc.doc_hasty-cobalt-lion
+        - /usr/bin/env sh .sqa/script.tacky-sapphire-forest.sh
+        container: qc.doc_snippy-wisteria-coral
   QC.Lic:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-copper-boar.sh
-        container: qc.lic_snoopy-maroon-wolf
+        - /usr/bin/env sh .sqa/script.thirsty-olive-wrasse.sh
+        container: qc.lic_cozy-firebrick-gar
   QC.Met:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-cinnabar-audemer.sh
-        container: qc.met_skanky-violet-heron
+        - /usr/bin/env sh .sqa/script.homely-fuchsia-tarsier.sh
+        container: qc.met_sickly-emerald-tang
   QC.Sec:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-persimmon-discus.sh
-        container: qc.sec_sloppy-green-mist
+        - /usr/bin/env sh .sqa/script.muzzy-teal-yak.sh
+        container: qc.sec_snazzy-cyan-horse
   QC.Sty:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-blue-dachshund.sh
-        container: qc.sty_woolly-sepia-turtle
+        - /usr/bin/env sh .sqa/script.scummy-viridian-wildebeest.sh
+        container: qc.sty_skinny-lavender-spaniel
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-teal-opossum.sh
-        container: qc.sty_frumpy-rust-squirt
+        - /usr/bin/env sh .sqa/script.scummy-asparagus-gerbil.sh
+        container: qc.sty_crabby-asparagus-kangaroo
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-orange-goat.sh
-        container: qc.sty_cheeky-sepia-crab
+        - /usr/bin/env sh .sqa/script.slimy-lemon-squid.sh
+        container: qc.sty_ready-violet-bracke
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-copper-walrus.sh
-        container: qc.sty_chewy-cinnabar-dane
+        - /usr/bin/env sh .sqa/script.hilly-cobalt-eel.sh
+        container: qc.sty_frumpy-denim-dingo
   QC.Ver:
     repos:
       git.man.poznan.pl/stash/scm/eosc-rs/preprocessor get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-malachite-insect.sh
-        container: qc.ver_messy-blue-labradoodle
+        - /usr/bin/env sh .sqa/script.sleepy-wisteria-moorhen.sh
+        container: qc.ver_shaky-pear-cougar
 timeout: 5400
